@@ -1,0 +1,18 @@
+ref_designators,part_number,description,qty,category_id,classification_note
+IC1,STM32F105,32-bit ARM Cortex-M3 MCU (ESC controller),1,IC_MOS_UP32,MCU datasheet: 32-bit CMOS
+IC6,FAN7888,3-phase half-bridge gate driver,1,IC_LIN_10000,Rule C-1: transistor count not published -> highest linear bin (conservative)
+"IC3, IC4",SN65HVD232D,CAN bus transceiver,2,IC_LIN_10000,Rule C-1
+IC5,LM75BD,Digital temperature sensor (I2C),1,IC_LIN_10000,Rule C-1 (mixed-signal sensor treated as linear IC)
+IC7,ZXCT1051,High-side current monitor,1,IC_LIN_10000,Rule C-1
+IC8,NCV1117-3.3,3.3 V linear regulator (LDO),1,IC_LIN_10000,Rule C-1
+IC2,CAT24C02,2-Kbit serial EEPROM,1,IC_MOS_EEPROM_16K,Datasheet: 2 Kbit CMOS EEPROM -> up to 16K bin
+"Q1, Q2, Q3, Q4, Q5, Q6",BSC019N04NS,40 V N-channel power MOSFET (3-phase bridge),6,Q_SIFET_LF,Silicon MOSFET switching at PWM frequency -> low-frequency Si FET row
+"D3, D4, D5",BAS21AHT1G,Switching diode (bootstrap),3,D_SWITCHING,Datasheet: high-voltage switching diode
+D6,1KSMB20A,Transient voltage suppressor,1,D_TVS,Datasheet: TVS diode
+LED1,LTST-C19HE1WT,Status LED,1,OPTO_LED,LED -> optoelectronic emitter
+X1,CRYSTAL 24 MHz (3.2x2.5 mm),Quartz crystal,1,XTAL,Quartz crystal
+C35,C-TANT 100 uF,Tantalum chip capacitor (DC link),1,C_TANT_SOLID,Tantalum chip (CWR) row
+"C1-C34",Ceramic chip capacitors (0402/0603/1206),"Ceramic capacitors incl. 11x 22 uF DC-link (1206)",34,C_CER_CHIP,Ceramic chip (CDR) row
+"R1-R13, R15-R26",Chip resistors (0402),Thick/thin film chip resistors,25,R_FILM,Chip resistors -> film chip (RM) row
+R14,CURRENT_SHUNT 0.005 ohm,Current-sense shunt resistor,1,R_FILM_POWER,Rule C-2: power film (RD) row (conservative; shunt construction not specified in schematic)
+"CON1, CON2, CON3, CON4, CON5","SM06B-SRSS-TB, 4-pin R/A",Board connectors (debug/CAN/PWM),5,CONN_RECT,Rule C-6: board-mounted connectors -> rectangular connector row (Notice 2 has no generic PCB-connector row)

@@ -1,0 +1,12 @@
+id,item,failure_mode,local_effect,end_effect,detection,severity_MIL-STD-882E,rate_fpmh,rate_status,mitigation_or_requirement
+FM-01,FMU board,Processor halt / reset in flight,No control outputs,TE-1 loss of controlled flight,Watchdog; IO co-processor failsafe outputs,Catastrophic,406.0 (whole board),Parts count (upper bound; FMEDA pending OI-08),SR-03 redundant flight computer or independent flight termination
+FM-02,FMU board,Power regulator (LDO) output lost,FMU unpowered,TE-1,Power monitoring LED / telemetry loss,Catastrophic,included in FM-01,Parts count,SR-03
+FM-03,ESC (per rotor),Power MOSFET short or open,Phase lost; motor stops or brakes,Rotor thrust lost (TE-1 for quad/PNPNPN; tolerable on rotors 1-4 in PPNNPN),Current/telemetry anomaly; attitude error,Catastrophic,24.5 of 280.6 per ESC,Parts count,SR-01 SR-02 SR-06 (derating; documented parts)
+FM-04,ESC (per rotor),Gate driver failure,Bridge not switched,Rotor thrust lost,Attitude error,Catastrophic,3.5 of 280.6 per ESC,Parts count,SR-01 SR-02
+FM-05,ESC (per rotor),MCU halt,No commutation,Rotor thrust lost,ESC telemetry timeout,Catastrophic,8.2 of 280.6 per ESC,Parts count,SR-01 SR-02
+FM-06,Motor,Bearing seizure / winding open,No thrust,Rotor thrust lost,Attitude error; ESC current,Catastrophic,–,OPEN OI-01,SR-01 SR-02; supplier data
+FM-07,Propeller,Blade fracture / loss,No or unbalanced thrust,Rotor thrust lost,Vibration; attitude error,Catastrophic,–,OPEN OI-02,SR-05 inspection interval
+FM-08,LiPo battery,Cell failure / voltage collapse,Propulsion power lost,TE-1,Cell voltage monitoring,Catastrophic,–,OPEN OI-03,SR-04
+FM-09,LiPo battery,Thermal runaway,Fire on board,TE-2 fire (environment/drone),Cell temperature,Critical to Catastrophic,–,OPEN OI-03,SR-04; landing-site and charging procedures
+FM-10,IMU sensing,Sensor fault (bias / stuck),Wrong attitude estimate,TE-1 if not isolated,Sensor consistency checks across redundant IMUs,Catastrophic,–,OPEN OI-04/05,Redundant IMUs; common-cause analysis in Rev B
+FM-11,GNSS / command link,Loss or spoofing,Wrong position or no commands,TE-3 fly-away,Link-loss and GNSS integrity monitoring,Catastrophic,–,OPEN OI-10 (external event),Geofence; failsafe land; qualitative in Rev A

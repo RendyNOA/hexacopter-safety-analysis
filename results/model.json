@@ -1,0 +1,614 @@
+{
+ "categories": {
+  "IC_MOS_UP32": {
+   "description": "Microcircuit, MOS microprocessor/MCU, up to 32 bits",
+   "section": "5.1",
+   "lambda_g": 0.82,
+   "piQ": {
+    "commercial": 10.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Commercial or unknown screening",
+    "milspec": "Class B"
+   }
+  },
+  "IC_MOS_LOGIC_100": {
+   "description": "Microcircuit, MOS digital logic, 1-100 gates",
+   "section": "5.1",
+   "lambda_g": 0.052,
+   "piQ": {
+    "commercial": 10.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Commercial or unknown screening",
+    "milspec": "Class B"
+   }
+  },
+  "IC_MOS_LOGIC_1000": {
+   "description": "Microcircuit, MOS digital logic, 101-1,000 gates",
+   "section": "5.1",
+   "lambda_g": 0.083,
+   "piQ": {
+    "commercial": 10.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Commercial or unknown screening",
+    "milspec": "Class B"
+   }
+  },
+  "IC_LIN_10000": {
+   "description": "Microcircuit, linear, 1,001-10,000 transistors",
+   "section": "5.1",
+   "lambda_g": 0.35,
+   "piQ": {
+    "commercial": 10.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Commercial or unknown screening",
+    "milspec": "Class B"
+   }
+  },
+  "IC_MOS_EEPROM_16K": {
+   "description": "Microcircuit, MOS memory, PROM/UVEPROM/EEPROM, up to 16K",
+   "section": "5.2",
+   "lambda_g": 0.072,
+   "piQ": {
+    "commercial": 10.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Commercial or unknown screening",
+    "milspec": "Class B"
+   }
+  },
+  "IC_MOS_SRAM_256K": {
+   "description": "Microcircuit, MOS memory, SRAM, 64K-256K",
+   "section": "5.2",
+   "lambda_g": 0.16,
+   "piQ": {
+    "commercial": 10.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Commercial or unknown screening",
+    "milspec": "Class B"
+   }
+  },
+  "D_SWITCHING": {
+   "description": "Diode, low frequency, switching",
+   "section": "6.1",
+   "lambda_g": 0.045,
+   "piQ": {
+    "commercial": 8.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Plastic",
+    "milspec": "JANTX"
+   }
+  },
+  "D_SCHOTTKY_PWR": {
+   "description": "Diode, power rectifier / Schottky power",
+   "section": "6.1",
+   "lambda_g": 0.13,
+   "piQ": {
+    "commercial": 8.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Plastic",
+    "milspec": "JANTX"
+   }
+  },
+  "D_TVS": {
+   "description": "Diode, transient suppressor / varistor",
+   "section": "6.1",
+   "lambda_g": 0.14,
+   "piQ": {
+    "commercial": 8.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Plastic",
+    "milspec": "JANTX"
+   }
+  },
+  "Q_BJT_LF": {
+   "description": "Transistor, NPN/PNP (f < 200 MHz)",
+   "section": "6.3",
+   "lambda_g": 0.0056,
+   "piQ": {
+    "commercial": 8.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Plastic",
+    "milspec": "JANTX"
+   }
+  },
+  "Q_SIFET_LF": {
+   "description": "Transistor, Si FET (f <= 400 MHz)",
+   "section": "6.4",
+   "lambda_g": 0.51,
+   "piQ": {
+    "commercial": 8.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Plastic",
+    "milspec": "JANTX"
+   }
+  },
+  "OPTO_LED": {
+   "description": "Optoelectronic, emitter (LED)",
+   "section": "6.11",
+   "lambda_g": 0.015,
+   "piQ": {
+    "commercial": 8.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Plastic",
+    "milspec": "JANTX"
+   }
+  },
+  "C_CER_CHIP": {
+   "description": "Capacitor, ceramic chip (CDR)",
+   "section": "10.1",
+   "lambda_g": 0.38,
+   "piQ": {
+    "commercial": 10.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Lower",
+    "milspec": "M"
+   }
+  },
+  "C_TANT_SOLID": {
+   "description": "Capacitor, tantalum chip (CWR)",
+   "section": "10.1",
+   "lambda_g": 0.0084,
+   "piQ": {
+    "commercial": 10.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Lower",
+    "milspec": "M"
+   }
+  },
+  "C_FEEDTHRU": {
+   "description": "Capacitor, paper/plastic feed-through (CZ, CZR)",
+   "section": "10.1",
+   "lambda_g": 0.032,
+   "piQ": {
+    "commercial": 10.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Lower",
+    "milspec": "M"
+   }
+  },
+  "R_FILM": {
+   "description": "Resistor, film, chip (RM)",
+   "section": "9.1",
+   "lambda_g": 0.29,
+   "piQ": {
+    "commercial": 10.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Lower",
+    "milspec": "M"
+   }
+  },
+  "R_FILM_POWER": {
+   "description": "Resistor, film, power (RD)",
+   "section": "9.1",
+   "lambda_g": 0.65,
+   "piQ": {
+    "commercial": 10.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Lower",
+    "milspec": "M"
+   }
+  },
+  "R_NETWORK": {
+   "description": "Resistor, film network (RZ)",
+   "section": "9.1",
+   "lambda_g": 0.19,
+   "piQ": {
+    "commercial": 10.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Lower",
+    "milspec": "M"
+   }
+  },
+  "CONN_RECT": {
+   "description": "Connector, rectangular",
+   "section": "15.1",
+   "lambda_g": 1.4,
+   "piQ": {
+    "commercial": 2.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Non-MIL",
+    "milspec": "MIL-SPEC"
+   }
+  },
+  "XTAL": {
+   "description": "Quartz crystal",
+   "section": "19.1",
+   "lambda_g": 0.74,
+   "piQ": {
+    "commercial": 2.1,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "Non-MIL",
+    "milspec": "MIL-SPEC"
+   }
+  },
+  "FUSE": {
+   "description": "Fuse",
+   "section": "22.1",
+   "lambda_g": 0.16,
+   "piQ": {
+    "commercial": 1.0,
+    "milspec": 1.0
+   },
+   "piQ_level": {
+    "commercial": "none (N/A in 217F)",
+    "milspec": "none (N/A in 217F)"
+   }
+  }
+ },
+ "boms": {
+  "ESC": [
+   {
+    "ref_designators": "IC1",
+    "part_number": "STM32F105",
+    "description": "32-bit ARM Cortex-M3 MCU (ESC controller)",
+    "qty": 1,
+    "category_id": "IC_MOS_UP32",
+    "classification_note": "MCU datasheet: 32-bit CMOS"
+   },
+   {
+    "ref_designators": "IC6",
+    "part_number": "FAN7888",
+    "description": "3-phase half-bridge gate driver",
+    "qty": 1,
+    "category_id": "IC_LIN_10000",
+    "classification_note": "Rule C-1: transistor count not published -> highest linear bin (conservative)"
+   },
+   {
+    "ref_designators": "IC3, IC4",
+    "part_number": "SN65HVD232D",
+    "description": "CAN bus transceiver",
+    "qty": 2,
+    "category_id": "IC_LIN_10000",
+    "classification_note": "Rule C-1"
+   },
+   {
+    "ref_designators": "IC5",
+    "part_number": "LM75BD",
+    "description": "Digital temperature sensor (I2C)",
+    "qty": 1,
+    "category_id": "IC_LIN_10000",
+    "classification_note": "Rule C-1 (mixed-signal sensor treated as linear IC)"
+   },
+   {
+    "ref_designators": "IC7",
+    "part_number": "ZXCT1051",
+    "description": "High-side current monitor",
+    "qty": 1,
+    "category_id": "IC_LIN_10000",
+    "classification_note": "Rule C-1"
+   },
+   {
+    "ref_designators": "IC8",
+    "part_number": "NCV1117-3.3",
+    "description": "3.3 V linear regulator (LDO)",
+    "qty": 1,
+    "category_id": "IC_LIN_10000",
+    "classification_note": "Rule C-1"
+   },
+   {
+    "ref_designators": "IC2",
+    "part_number": "CAT24C02",
+    "description": "2-Kbit serial EEPROM",
+    "qty": 1,
+    "category_id": "IC_MOS_EEPROM_16K",
+    "classification_note": "Datasheet: 2 Kbit CMOS EEPROM -> up to 16K bin"
+   },
+   {
+    "ref_designators": "Q1, Q2, Q3, Q4, Q5, Q6",
+    "part_number": "BSC019N04NS",
+    "description": "40 V N-channel power MOSFET (3-phase bridge)",
+    "qty": 6,
+    "category_id": "Q_SIFET_LF",
+    "classification_note": "Silicon MOSFET switching at PWM frequency -> low-frequency Si FET row"
+   },
+   {
+    "ref_designators": "D3, D4, D5",
+    "part_number": "BAS21AHT1G",
+    "description": "Switching diode (bootstrap)",
+    "qty": 3,
+    "category_id": "D_SWITCHING",
+    "classification_note": "Datasheet: high-voltage switching diode"
+   },
+   {
+    "ref_designators": "D6",
+    "part_number": "1KSMB20A",
+    "description": "Transient voltage suppressor",
+    "qty": 1,
+    "category_id": "D_TVS",
+    "classification_note": "Datasheet: TVS diode"
+   },
+   {
+    "ref_designators": "LED1",
+    "part_number": "LTST-C19HE1WT",
+    "description": "Status LED",
+    "qty": 1,
+    "category_id": "OPTO_LED",
+    "classification_note": "LED -> optoelectronic emitter"
+   },
+   {
+    "ref_designators": "X1",
+    "part_number": "CRYSTAL 24 MHz (3.2x2.5 mm)",
+    "description": "Quartz crystal",
+    "qty": 1,
+    "category_id": "XTAL",
+    "classification_note": "Quartz crystal"
+   },
+   {
+    "ref_designators": "C35",
+    "part_number": "C-TANT 100 uF",
+    "description": "Tantalum chip capacitor (DC link)",
+    "qty": 1,
+    "category_id": "C_TANT_SOLID",
+    "classification_note": "Tantalum chip (CWR) row"
+   },
+   {
+    "ref_designators": "C1-C34",
+    "part_number": "Ceramic chip capacitors (0402/0603/1206)",
+    "description": "Ceramic capacitors incl. 11x 22 uF DC-link (1206)",
+    "qty": 34,
+    "category_id": "C_CER_CHIP",
+    "classification_note": "Ceramic chip (CDR) row"
+   },
+   {
+    "ref_designators": "R1-R13, R15-R26",
+    "part_number": "Chip resistors (0402)",
+    "description": "Thick/thin film chip resistors",
+    "qty": 25,
+    "category_id": "R_FILM",
+    "classification_note": "Chip resistors -> film chip (RM) row"
+   },
+   {
+    "ref_designators": "R14",
+    "part_number": "CURRENT_SHUNT 0.005 ohm",
+    "description": "Current-sense shunt resistor",
+    "qty": 1,
+    "category_id": "R_FILM_POWER",
+    "classification_note": "Rule C-2: power film (RD) row (conservative; shunt construction not specified in schematic)"
+   },
+   {
+    "ref_designators": "CON1, CON2, CON3, CON4, CON5",
+    "part_number": "SM06B-SRSS-TB, 4-pin R/A",
+    "description": "Board connectors (debug/CAN/PWM)",
+    "qty": 5,
+    "category_id": "CONN_RECT",
+    "classification_note": "Rule C-6: board-mounted connectors -> rectangular connector row (Notice 2 has no generic PCB-connector row)"
+   }
+  ],
+  "FMU": [
+   {
+    "ref_designators": "U1001",
+    "part_number": "STM32F427VIT6",
+    "description": "Main flight-management MCU (32-bit Cortex-M4)",
+    "qty": 1,
+    "category_id": "IC_MOS_UP32",
+    "classification_note": "MCU datasheet: 32-bit CMOS"
+   },
+   {
+    "ref_designators": "U7001",
+    "part_number": "STM32F100C8T6B",
+    "description": "IO co-processor MCU (32-bit Cortex-M3)",
+    "qty": 1,
+    "category_id": "IC_MOS_UP32",
+    "classification_note": "MCU datasheet: 32-bit CMOS"
+   },
+   {
+    "ref_designators": "U1002",
+    "part_number": "FM25V01-G",
+    "description": "128-Kbit F-RAM (parameter storage)",
+    "qty": 1,
+    "category_id": "IC_MOS_SRAM_256K",
+    "classification_note": "Rule C-3: F-RAM has no MIL-217F row -> nearest MOS memory row (SRAM 64K-256K)"
+   },
+   {
+    "ref_designators": "U3001, U3002, U8001, U8002",
+    "part_number": "TXS0108ERGYR",
+    "description": "8-bit bidirectional level translator",
+    "qty": 4,
+    "category_id": "IC_MOS_LOGIC_1000",
+    "classification_note": "Datasheet function (8 channels) -> 101-1000 gate bin"
+   },
+   {
+    "ref_designators": "U8003",
+    "part_number": "74LVC2G240DP",
+    "description": "Dual inverting buffer",
+    "qty": 1,
+    "category_id": "IC_MOS_LOGIC_100",
+    "classification_note": "Datasheet function (2 gates) -> 1-100 gate bin"
+   },
+   {
+    "ref_designators": "U3003, U3004",
+    "part_number": "MAX3051EKA+T",
+    "description": "CAN transceiver",
+    "qty": 2,
+    "category_id": "IC_LIN_10000",
+    "classification_note": "Rule C-1: transistor count not published -> highest linear bin (conservative)"
+   },
+   {
+    "ref_designators": "U5001, U10002",
+    "part_number": "MIC5332-SSYMT",
+    "description": "Dual 3.3 V LDO regulator",
+    "qty": 2,
+    "category_id": "IC_LIN_10000",
+    "classification_note": "Rule C-1"
+   },
+   {
+    "ref_designators": "U10001",
+    "part_number": "BQ24313DSGT",
+    "description": "Input over-voltage protection IC",
+    "qty": 1,
+    "category_id": "IC_LIN_10000",
+    "classification_note": "Rule C-1"
+   },
+   {
+    "ref_designators": "U2001",
+    "part_number": "NUF2042XV6T1G",
+    "description": "USB ESD protection / filter array",
+    "qty": 1,
+    "category_id": "D_TVS",
+    "classification_note": "Rule C-4: protection array -> transient suppressor row"
+   },
+   {
+    "ref_designators": "D5001",
+    "part_number": "RB751V40T1G",
+    "description": "Small-signal Schottky diode 30 mA",
+    "qty": 1,
+    "category_id": "D_SWITCHING",
+    "classification_note": "Small-signal (30 mA) -> switching diode row"
+   },
+   {
+    "ref_designators": "D8001, D8002",
+    "part_number": "PESD0402-140",
+    "description": "ESD/TVS diode",
+    "qty": 2,
+    "category_id": "D_TVS",
+    "classification_note": "TVS diode"
+   },
+   {
+    "ref_designators": "D10001",
+    "part_number": "PMEG2005CT,215",
+    "description": "Schottky rectifier 500 mA",
+    "qty": 1,
+    "category_id": "D_SCHOTTKY_PWR",
+    "classification_note": "Schottky rectifier row"
+   },
+   {
+    "ref_designators": "Q5001",
+    "part_number": "MMBT3906LT1",
+    "description": "PNP switching transistor",
+    "qty": 1,
+    "category_id": "Q_BJT_LF",
+    "classification_note": "Low-power bipolar"
+   },
+   {
+    "ref_designators": "Q6001",
+    "part_number": "BSS123-7-F",
+    "description": "N-channel small-signal MOSFET",
+    "qty": 1,
+    "category_id": "Q_SIFET_LF",
+    "classification_note": "Si FET"
+   },
+   {
+    "ref_designators": "LED1, LED2, LED6001-LED6011 (13 total)",
+    "part_number": "APTD1608CGCK, APTD1608SECK",
+    "description": "Indicator LEDs",
+    "qty": 13,
+    "category_id": "OPTO_LED",
+    "classification_note": "LED -> optoelectronic emitter"
+   },
+   {
+    "ref_designators": "X1001, X7001",
+    "part_number": "NX3225SA-24.000MHZ",
+    "description": "24 MHz quartz crystal",
+    "qty": 2,
+    "category_id": "XTAL",
+    "classification_note": "Quartz crystal"
+   },
+   {
+    "ref_designators": "C1001 ... C10005 (47 total)",
+    "part_number": "Various MLCC (Yageo/TDK/AVX/Samsung/Murata)",
+    "description": "Ceramic chip capacitors",
+    "qty": 47,
+    "category_id": "C_CER_CHIP",
+    "classification_note": "Ceramic chip (CDR) row"
+   },
+   {
+    "ref_designators": "L2001, L2002, L5001",
+    "part_number": "KNH16C104DA5TS",
+    "description": "Feed-through EMI filter capacitor",
+    "qty": 3,
+    "category_id": "C_FEEDTHRU",
+    "classification_note": "Feed-through capacitor row"
+   },
+   {
+    "ref_designators": "R1 ... R10001 (52 total)",
+    "part_number": "Yageo/Panasonic/Samsung chip resistors",
+    "description": "Chip resistors 0402/0603",
+    "qty": 52,
+    "category_id": "R_FILM",
+    "classification_note": "Chip resistors -> film chip (RM) row"
+   },
+   {
+    "ref_designators": "RN2001, RN2002, RN3001, RN3002, RN8001, RN8002",
+    "part_number": "EXB-2HV series",
+    "description": "Resistor arrays (8 resistors each)",
+    "qty": 6,
+    "category_id": "R_NETWORK",
+    "classification_note": "Resistor network row"
+   },
+   {
+    "ref_designators": "F10001",
+    "part_number": "0ZCA0035FF2G",
+    "description": "Resettable PTC fuse 0.35 A",
+    "qty": 1,
+    "category_id": "FUSE",
+    "classification_note": "Rule C-5: resettable PTC mapped to fuse row"
+   },
+   {
+    "ref_designators": "J2001, U2002, U$2, U$9001",
+    "part_number": "47346-0001, 2908-05WB-MG, DF40C-20DS, DF17-80DS",
+    "description": "Micro-USB, microSD socket, board-to-board connectors",
+    "qty": 4,
+    "category_id": "CONN_RECT",
+    "classification_note": "Rule C-6: board-mounted connectors -> rectangular connector row (Notice 2 has no generic PCB-connector row)"
+   }
+  ]
+ },
+ "configs": {
+  "quad_x": "Quadcopter X (4 rotors)",
+  "hexa_pnpnpn": "Hexacopter, classic PNPNPN (6 rotors)",
+  "hexa_ppnnpn": "Hexacopter, PPNNPN (6 rotors)"
+ },
+ "reference": {
+  "quad_x": {
+   "commercial": 0.0015270776285657428,
+   "milspec": 0.00018627984775410056
+  },
+  "hexa_pnpnpn": {
+   "commercial": 0.0020871796050890845,
+   "milspec": 0.000256085204584644
+  },
+  "hexa_ppnnpn": {
+   "commercial": 0.0009671327931318752,
+   "milspec": 0.00011647692785643482
+  }
+ }
+}

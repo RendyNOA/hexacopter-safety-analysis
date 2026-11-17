@@ -1,0 +1,60 @@
+## Quadcopter X (4 rotors)
+
+Order 1: 15 cut sets
+  {BAT}
+  {ESC1}
+  {ESC2}
+  {ESC3}
+  {ESC4}
+  {FMU}
+  {IMU}
+  {MOT1}
+  {MOT2}
+  {MOT3}
+  {MOT4}
+  {PRP1}
+  ... (3 more)
+
+## Hexacopter, classic PNPNPN (6 rotors)
+
+Order 1: 21 cut sets
+  {BAT}
+  {ESC1}
+  {ESC2}
+  {ESC3}
+  {ESC4}
+  {ESC5}
+  {ESC6}
+  {FMU}
+  {IMU}
+  {MOT1}
+  {MOT2}
+  {MOT3}
+  ... (9 more)
+
+## Hexacopter, PPNNPN (6 rotors)
+
+Order 1: 9 cut sets
+  {BAT}
+  {ESC5}
+  {ESC6}
+  {FMU}
+  {IMU}
+  {MOT5}
+  {MOT6}
+  {PRP5}
+  {PRP6}
+Order 2: 54 cut sets
+  {ESC1, ESC2}
+  {ESC1, ESC3}
+  {ESC1, ESC4}
+  {ESC1, MOT2}
+  {ESC1, MOT3}
+  {ESC1, MOT4}
+  {ESC1, PRP2}
+  {ESC1, PRP3}
+  {ESC1, PRP4}
+  {ESC2, ESC3}
+  {ESC2, ESC4}
+  {ESC2, MOT1}
+  ... (42 more)

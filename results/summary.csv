@@ -1,0 +1,7 @@
+config,label,parts_quality,lambda_FMU_fpmh,lambda_ESC_fpmh,P_loss_of_control_per_flight_hour,one_in_N_flight_hours,FMU_share_FV,propulsion_electronics_share_FV
+quad_x,Quadcopter X (4 rotors),commercial,406.013,280.558,0.0015270776285657428,655,0.2655,0.7345
+hexa_pnpnpn,"Hexacopter, classic PNPNPN (6 rotors)",commercial,406.013,280.558,0.0020871796050890845,479,0.1942,0.8058
+hexa_ppnnpn,"Hexacopter, PPNNPN (6 rotors)",commercial,406.013,280.558,0.0009671327931318752,1034,0.4195,0.5805
+quad_x,Quadcopter X (4 rotors),milspec,46.656,34.91,0.00018627984775410056,5368,0.2504,0.7496
+hexa_pnpnpn,"Hexacopter, classic PNPNPN (6 rotors)",milspec,46.656,34.91,0.000256085204584644,3905,0.1821,0.8179
+hexa_ppnnpn,"Hexacopter, PPNNPN (6 rotors)",milspec,46.656,34.91,0.00011647692785643482,8585,0.4005,0.5995

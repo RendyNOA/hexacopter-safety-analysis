@@ -1,0 +1,23 @@
+ref_designators,part_number,description,qty,category_id,lambda_g,pi_Q,lambda_fpmh,classification_note
+U1001,STM32F427VIT6,Main flight-management MCU (32-bit Cortex-M4),1,IC_MOS_UP32,0.82,10.0,8.2,MCU datasheet: 32-bit CMOS
+U7001,STM32F100C8T6B,IO co-processor MCU (32-bit Cortex-M3),1,IC_MOS_UP32,0.82,10.0,8.2,MCU datasheet: 32-bit CMOS
+U1002,FM25V01-G,128-Kbit F-RAM (parameter storage),1,IC_MOS_SRAM_256K,0.16,10.0,1.6,Rule C-3: F-RAM has no MIL-217F row -> nearest MOS memory row (SRAM 64K-256K)
+"U3001, U3002, U8001, U8002",TXS0108ERGYR,8-bit bidirectional level translator,4,IC_MOS_LOGIC_1000,0.083,10.0,3.3200000000000003,Datasheet function (8 channels) -> 101-1000 gate bin
+U8003,74LVC2G240DP,Dual inverting buffer,1,IC_MOS_LOGIC_100,0.052,10.0,0.52,Datasheet function (2 gates) -> 1-100 gate bin
+"U3003, U3004",MAX3051EKA+T,CAN transceiver,2,IC_LIN_10000,0.35,10.0,7.0,Rule C-1: transistor count not published -> highest linear bin (conservative)
+"U5001, U10002",MIC5332-SSYMT,Dual 3.3 V LDO regulator,2,IC_LIN_10000,0.35,10.0,7.0,Rule C-1
+U10001,BQ24313DSGT,Input over-voltage protection IC,1,IC_LIN_10000,0.35,10.0,3.5,Rule C-1
+U2001,NUF2042XV6T1G,USB ESD protection / filter array,1,D_TVS,0.14,8.0,1.12,Rule C-4: protection array -> transient suppressor row
+D5001,RB751V40T1G,Small-signal Schottky diode 30 mA,1,D_SWITCHING,0.045,8.0,0.36,Small-signal (30 mA) -> switching diode row
+"D8001, D8002",PESD0402-140,ESD/TVS diode,2,D_TVS,0.14,8.0,2.24,TVS diode
+D10001,"PMEG2005CT,215",Schottky rectifier 500 mA,1,D_SCHOTTKY_PWR,0.13,8.0,1.04,Schottky rectifier row
+Q5001,MMBT3906LT1,PNP switching transistor,1,Q_BJT_LF,0.0056,8.0,0.0448,Low-power bipolar
+Q6001,BSS123-7-F,N-channel small-signal MOSFET,1,Q_SIFET_LF,0.51,8.0,4.08,Si FET
+"LED1, LED2, LED6001-LED6011 (13 total)","APTD1608CGCK, APTD1608SECK",Indicator LEDs,13,OPTO_LED,0.015,8.0,1.56,LED -> optoelectronic emitter
+"X1001, X7001",NX3225SA-24.000MHZ,24 MHz quartz crystal,2,XTAL,0.74,2.1,3.108,Quartz crystal
+C1001 ... C10005 (47 total),Various MLCC (Yageo/TDK/AVX/Samsung/Murata),Ceramic chip capacitors,47,C_CER_CHIP,0.38,10.0,178.6,Ceramic chip (CDR) row
+"L2001, L2002, L5001",KNH16C104DA5TS,Feed-through EMI filter capacitor,3,C_FEEDTHRU,0.032,10.0,0.96,Feed-through capacitor row
+R1 ... R10001 (52 total),Yageo/Panasonic/Samsung chip resistors,Chip resistors 0402/0603,52,R_FILM,0.29,10.0,150.79999999999998,Chip resistors -> film chip (RM) row
+"RN2001, RN2002, RN3001, RN3002, RN8001, RN8002",EXB-2HV series,Resistor arrays (8 resistors each),6,R_NETWORK,0.19,10.0,11.400000000000002,Resistor network row
+F10001,0ZCA0035FF2G,Resettable PTC fuse 0.35 A,1,FUSE,0.16,1.0,0.16,Rule C-5: resettable PTC mapped to fuse row
+"J2001, U2002, U$2, U$9001","47346-0001, 2908-05WB-MG, DF40C-20DS, DF17-80DS","Micro-USB, microSD socket, board-to-board connectors",4,CONN_RECT,1.4,2.0,11.2,Rule C-6: board-mounted connectors -> rectangular connector row (Notice 2 has no generic PCB-connector row)

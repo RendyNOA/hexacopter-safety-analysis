@@ -1,0 +1,22 @@
+category_id,description,mil217f_section,lambda_g_fpmh_ARW,piQ_commercial,piQ_commercial_level,piQ_milspec,piQ_milspec_level,handbook_page,verification
+IC_MOS_UP32,"Microcircuit, MOS microprocessor/MCU, up to 32 bits",5.1,0.82,10.0,Commercial or unknown screening,1.0,Class B,"MIL-HDBK-217F Notice 2, A-2 (λg), A-4 (πQ)",Checked against handbook scan 2026-11-17; matches
+IC_MOS_LOGIC_100,"Microcircuit, MOS digital logic, 1-100 gates",5.1,0.052,10.0,Commercial or unknown screening,1.0,Class B,"MIL-HDBK-217F Notice 2, A-2, A-4",Checked against handbook scan 2026-11-17; matches
+IC_MOS_LOGIC_1000,"Microcircuit, MOS digital logic, 101-1,000 gates",5.1,0.083,10.0,Commercial or unknown screening,1.0,Class B,"MIL-HDBK-217F Notice 2, A-2, A-4",Checked against handbook scan 2026-11-17; matches
+IC_LIN_10000,"Microcircuit, linear, 1,001-10,000 transistors",5.1,0.35,10.0,Commercial or unknown screening,1.0,Class B,"MIL-HDBK-217F Notice 2, A-2, A-4",Checked against handbook scan 2026-11-17; matches
+IC_MOS_EEPROM_16K,"Microcircuit, MOS memory, PROM/UVEPROM/EEPROM, up to 16K",5.2,0.072,10.0,Commercial or unknown screening,1.0,Class B,"MIL-HDBK-217F Notice 2, A-3, A-4",Checked against handbook scan 2026-11-17; matches
+IC_MOS_SRAM_256K,"Microcircuit, MOS memory, SRAM, 64K-256K",5.2,0.16,10.0,Commercial or unknown screening,1.0,Class B,"MIL-HDBK-217F Notice 2, A-3, A-4",Checked against handbook scan 2026-11-17; matches
+D_SWITCHING,"Diode, low frequency, switching",6.1,0.045,8.0,Plastic,1.0,JANTX,"MIL-HDBK-217F Notice 2, A-5 (λg), A-6 (πQ)",Checked against handbook scan 2026-11-17; matches
+D_SCHOTTKY_PWR,"Diode, power rectifier / Schottky power",6.1,0.13,8.0,Plastic,1.0,JANTX,"MIL-HDBK-217F Notice 2, A-5, A-6",Checked against handbook scan 2026-11-17; matches
+D_TVS,"Diode, transient suppressor / varistor",6.1,0.14,8.0,Plastic,1.0,JANTX,"MIL-HDBK-217F Notice 2, A-5, A-6",Checked against handbook scan 2026-11-17; corrected: RAMSTK index pointed to the voltage reference row (0.12)
+Q_BJT_LF,"Transistor, NPN/PNP (f < 200 MHz)",6.3,0.0056,8.0,Plastic,1.0,JANTX,"MIL-HDBK-217F Notice 2, A-5, A-6",Checked against handbook scan 2026-11-17; matches
+Q_SIFET_LF,"Transistor, Si FET (f <= 400 MHz)",6.4,0.51,8.0,Plastic,1.0,JANTX,"MIL-HDBK-217F Notice 2, A-5, A-6",Checked against handbook scan 2026-11-17; matches
+OPTO_LED,"Optoelectronic, emitter (LED)",6.11,0.015,8.0,Plastic,1.0,JANTX,"MIL-HDBK-217F Notice 2, A-6",Checked against handbook scan 2026-11-17; corrected: RAMSTK value 0.014
+C_CER_CHIP,"Capacitor, ceramic chip (CDR)",10.1,0.38,10.0,Lower,1.0,M,"MIL-HDBK-217F Notice 2, A-8",Checked against handbook scan 2026-11-17; corrected: Revised in Notice 2; RAMSTK had pre-Notice-2 value 0.048
+C_TANT_SOLID,"Capacitor, tantalum chip (CWR)",10.1,0.0084,10.0,Lower,1.0,M,"MIL-HDBK-217F Notice 2, A-8","Checked against handbook scan 2026-11-17; corrected: Revised in Notice 2; RAMSTK had 0.055 (solid, CSR)"
+C_FEEDTHRU,"Capacitor, paper/plastic feed-through (CZ, CZR)",10.1,0.032,10.0,Lower,1.0,M,"MIL-HDBK-217F Notice 2, A-8",Checked against handbook scan 2026-11-17; corrected: Revised in Notice 2; RAMSTK had 0.11
+R_FILM,"Resistor, film, chip (RM)",9.1,0.29,10.0,Lower,1.0,M,"MIL-HDBK-217F Notice 2, A-7",Checked against handbook scan 2026-11-17; corrected: Revised in Notice 2; RAMSTK had pre-Notice-2 value 0.034
+R_FILM_POWER,"Resistor, film, power (RD)",9.1,0.65,10.0,Lower,1.0,M,"MIL-HDBK-217F Notice 2, A-7",Checked against handbook scan 2026-11-17; corrected: Revised in Notice 2; RAMSTK had 0.32
+R_NETWORK,"Resistor, film network (RZ)",9.1,0.19,10.0,Lower,1.0,M,"MIL-HDBK-217F Notice 2, A-7",Checked against handbook scan 2026-11-17; corrected: Revised in Notice 2; RAMSTK had 0.10
+CONN_RECT,"Connector, rectangular",15.1,1.4,2.0,Non-MIL,1.0,MIL-SPEC,"MIL-HDBK-217F Notice 2, A-9 (λg), A-11 (πQ)",Checked against handbook scan 2026-11-17; corrected: Notice 2 has no generic PCB-connector row; RAMSTK had 0.19
+XTAL,Quartz crystal,19.1,0.74,2.1,Non-MIL,1.0,MIL-SPEC,"MIL-HDBK-217F Notice 2, A-10 (λg), A-11 (πQ)",Checked against handbook scan 2026-11-17; corrected: RAMSTK had πQ 3.4
+FUSE,Fuse,22.1,0.16,1.0,none (N/A in 217F),1.0,none (N/A in 217F),"MIL-HDBK-217F Notice 2, A-10, A-11 (no πQ)",Checked against handbook scan 2026-11-17; corrected: RAMSTK had 0.18
